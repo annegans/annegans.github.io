@@ -1,5 +1,7 @@
 body{
   font-family: 'Lato', sans-serif;
+  color: #858181;
+  font-weight: 300;
 }
 
 .gradient{
@@ -12,10 +14,76 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
 
 }
 
+.blue{
+
+  color: #24adae;
+  
+}
+
+.background-blue{
+  background-color: #24adae;
+}
+
 .light-grey{
   background-color: #e9e9e9
 }
 
+.heading-green-line{
+    color: #22b59b;
+    font-size: 21px;
+    line-height: 31px;
+    border-bottom: 2px solid #22b59b;
+    padding-bottom: 16px;
+}
+
+
+.heading-green-line-small{
+    color: #22b59b;
+    font-size: 21px;
+    line-height: 31px;
+    border-bottom: 2px solid #22b59b;
+    padding-bottom: 5px;
+}
+
+.size1{
+  width: 190px;
+}
+
+.size2{
+  width: 220px;
+}
+
+.size3{
+  width: 481px;
+}
+
+.size4{
+  width: 495px;
+}
+
+.size5{
+    width: 154px;
+}
+
+.size6{
+  width: 271px;
+}
+
+.size7{
+  width: 299px;
+}
+.hr-green{
+  max-width: none;
+  border-bottom: 2px solid #22b59b;
+}
+
+.p{
+  line-height: 26px;
+}
+
+.padding-top{
+  padding-top: 130px;
+}
 /*
 ///////////////////////////navigation/////////////////////*/
 
@@ -89,13 +157,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
 
 }
 
-
-
-
-
-
-
-
+.list{
+      line-height: 35px;
+}
 
 /*
 //////////////////////space-line/////////////////////*/
@@ -107,9 +171,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
 box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.29);
 } 
 
+/*
+//////////////////diensten///////////////////////*/
+
+
+.icon-style{
+  text-align: center
+}
+
+.icon-s{
+   width: 25%
+
+}
+
+.dienst-margin{
+    padding-right: 58px;
+    padding-left: 58px;
+
+}
+
+.last-padding{
+  padding-bottom: 130px;
+}
 
 
 
+/*//////////////////////////////////one-liner////////////////////*/
 
-
-
+.one-liner{
+      color: white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
