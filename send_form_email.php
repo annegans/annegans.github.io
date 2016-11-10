@@ -15,21 +15,21 @@ if(isset($_POST['email'])) {
  
      
  
-    // function died($error) {
+    function died($error) {
  
-    //     // your error code can go here
+        // your error code can go here
  
-    //     echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
  
-    //     echo "These errors appear below.<br /><br />";
+        echo "These errors appear below.<br /><br />";
  
-    //     echo $error."<br /><br />";
+        echo $error."<br /><br />";
  
-    //     echo "Please go back and fix these errors.<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
  
-    //     die();
+        die();
  
-    // }
+    }
  
      
  
@@ -51,29 +51,29 @@ if(isset($_POST['email'])) {
  
      
  
-    $naam = $_POST['naam'];
+    $naam = $_POST['naam']; // required
  
-    // $straat = $_POST['straat']; 
+    $straat = $_POST['straat']; // required
  
-    // $postcode = $_POST['postcode']; 
+    $postcode = $_POST['postcode']; // required
 
-    // $stad = $_POST['stad']; 
+    $stad = $_POST['stad']; // required
  
-    // $tel = $_POST['tel']; 
+    $tel = $_POST['tel']; // not required
  
-    // $email = $_POST['email']; 
+    $email = $_POST['email']; // required
 
-    // $makelaar = $_POST['makelaar']; 
+    $makelaar = $_POST['makelaar']; 
 
-    // $mcontact = $_POST['mcontact']; 
+    $mcontact = $_POST['mcontact']; 
 
-    // $straath2 = $_POST['straath2']; 
+    $straath2 = $_POST['straath2']; 
 
-    // $stadh2 = $_POST['stadh2']; 
+    $stadh2 = $_POST['stadh2']; 
 
-    // $postcodeh2 = $_POST['postcodeh2']; 
+    $postcodeh2 = $_POST['postcodeh2']; 
 
-    // $aankoopdatum = $_POST['aankoop datum']; 
+    $aankoopdatum = $_POST['aankoop datum']; 
  
      
  
