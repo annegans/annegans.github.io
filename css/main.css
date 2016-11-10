@@ -36,6 +36,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
     padding-bottom: 16px;
 }
 
+.float-right{
+  float: right;
+}
+
 
 .heading-green-line-small{
     color: #22b59b;
@@ -72,6 +76,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
 .size7{
   width: 299px;
 }
+
+.size8{
+  width: 175px;
+}
+
 .hr-green{
   max-width: none;
   border-bottom: 2px solid #22b59b;
@@ -83,6 +92,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
 
 .padding-top{
   padding-top: 130px;
+}
+
+.letter-spacing{
+  letter-spacing:1px;
 }
 /*
 ///////////////////////////navigation/////////////////////*/
@@ -153,7 +166,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
 }
 
 .image{
-  width: 65%;
+  width: 54%;
 
 }
 
@@ -195,11 +208,18 @@ box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.29);
 }
 
 
+/*///////////////////////////steps////////////////////*/
+
+.steps-i{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 
 /*//////////////////////////////////one-liner////////////////////*/
 
 .one-liner{
-      color: white;
+    color: white;
     padding-bottom: 50px;
     padding-top: 50px;
     margin-bottom: 0px;
@@ -207,3 +227,60 @@ box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.29);
     font-weight: 400;
     letter-spacing: 1px;
 }
+
+
+
+/*
+///////////////////////input///////////////*/
+
+
+input{
+  background: none;
+   margin-bottom: 18px;
+    border: 2px solid #22b59b;
+    height: 38px;
+}
+
+.input100{
+  width: 100%;
+}
+
+.input-margin{
+    margin-right: 7%;
+}
+
+.input-margin2{
+    margin-right: 10%;
+    width: 204px;
+    background: #24adae;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.input-text{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.intro-input{
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 23px;
+    /* margin-bottom: 27px; */
+    color: #22b59b;
+
+}
+
+
+/*///////footer////////*/
+
+
+.footer-padding{
+  color:white;
+  padding-bottom: 30px;
+  padding-top:50px;
+}
+
