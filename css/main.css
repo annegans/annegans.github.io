@@ -14,6 +14,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
 
 }
 
+input:focus {
+    outline:none;
+}
+button:focus{
+     outline:none;
+}
+header{
+      min-height: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .blue{
 
   color: #24adae;
@@ -40,6 +55,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
   float: right;
 }
 
+.no-margin{
+     margin: 0px;
+    color: #24adae;
+    font-weight: 400;
+        font-size: 14px;
+
+    curser:default;
+}
 
 .heading-green-line-small{
     color: #22b59b;
@@ -48,6 +71,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
     border-bottom: 2px solid #22b59b;
     padding-bottom: 5px;
 }
+
+
 
 .size1{
   width: 190px;
@@ -126,7 +151,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24adae', end
 
 /*/////////////////////heading//////////////////////////*/
 
+#tel{
+ color:white;
+ letter-spacing: 3px;
+    font-size: 15px;
+}
 
+#tel:hover{
+  color:white;
+}
 #main-heading{
     font-size: 47px;
     letter-spacing: 2px;
@@ -207,6 +240,41 @@ box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.29);
   padding-bottom: 130px;
 }
 
+.box-p-text{
+    background: white;
+    padding: 10px;
+    border: 1px solid #22b59b;
+    border-radius: 7px;
+    cursor: default;
+}
+
+.display-none-d{
+  display: none;
+}
+
+.close-d{
+  color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    background: #24adae;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.close-d:hover{
+  background: #22b59b;
+
+}
+/*.no-margin-row{
+  padding-left: 0px;
+  padding-right: 0px;
+}*/
 
 /*///////////////////////////steps////////////////////*/
 
@@ -215,6 +283,19 @@ box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.29);
   margin-bottom: 20px;
 }
 
+
+
+.ar-step{
+  color: #24adae;
+}
+
+.box-steps{
+/*  background: white;
+    padding: 10px;
+    border: 1px solid #22b59b;
+    border-radius: 7px;*/
+  
+}
 
 /*//////////////////////////////////one-liner////////////////////*/
 
@@ -275,6 +356,7 @@ input{
 }
 
 
+
 /*///////footer////////*/
 
 
@@ -284,3 +366,65 @@ input{
   padding-top:50px;
 }
 
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #22b59b;
+  fill: transparent;
+  stroke-width: 3px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+
+.display{
+  display: inline-block!important;
+}
+
+.display-none{
+  display: none;
+}
+
+.hellothere{
+  display: none;
+  curser:default;
+}
