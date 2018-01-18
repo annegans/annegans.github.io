@@ -36,8 +36,13 @@
 .white{
   color:white;
 }
-
-
+.black{
+  color:black!important;
+}
+.nav>li {
+    position: relative;
+    display: inline-block!important;
+}
 
 .logo{
     color: white;
