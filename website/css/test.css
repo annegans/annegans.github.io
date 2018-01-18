@@ -1,0 +1,88 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+  font-family: 'Satisfy', cursive;
+  color: black;
+}
+
+.docScroller {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/fir-sm.jpg");
+  background-size: 400px 400px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: mandatory;
+  /* older spec implementation */
+  scroll-snap-destination: 0% 100%;
+  scroll-snap-points-x: repeat(100%);
+}
+
+.page {
+  scroll-snap-align: start;
+  
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: initial;
+}
+
+.inside {
+  border: 5px solid #f4ccbf;
+  opacity: 0.95;
+  width: 90vw;
+  margin: 8vh 0 0 5vw;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  h1 {
+    opacity: 0.9;
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 3vw;
+    background: #478e85;
+    padding: 8px 0 10px;
+  }
+}
+
+.one {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/fir4.png") no-repeat;
+  background-size: 800px 350px;
+}
+
+.two {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/fir3.png") no-repeat;
+  background-size: 500px 400px;
+  background-position: bottom right;
+}
+
+.three {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/fir2.png") no-repeat;
+  background-size: 500px 400px;
+  background-position: right center;
+}
+
+.four {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/fir5.png") no-repeat;
+  background-size: 800px 600px;
+  background-position: center center;
+}
+
+svg {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.5;
+  pointer-events: none;
+  path {
+    stroke: #e8c2b5;
+  }
+}

@@ -1,0 +1,27 @@
+.box {
+    position: relative;
+    overflow: hidden;    
+    height: 100vh;
+    width: 100vw;
+}
+.layers {
+    position: absolute;
+    overflow: hidden;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+}
+.layer {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+body{
+    background-color: black;
+}
+
