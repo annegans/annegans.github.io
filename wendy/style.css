@@ -1,0 +1,19 @@
+header{
+  background-image: url("page-1.png");
+  background-size:cover;
+  height: 100vh;
+
+
+}
+
+.background1{
+    background-image: url("page-1.png");
+}
+
+.background2{
+    background-image: url("page-2.png");
+}
+
+.background3{
+    background-image: url("page-3.png");
+}
