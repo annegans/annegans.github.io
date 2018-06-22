@@ -38,16 +38,7 @@ width:300px;
 height:250px;
 }
 
-#restart{
-position:absolute;
-right:10px;
-top:15px;
-width:19px;
-height:19px;
-cursor:pointer;
-z-index: 999;
-opacity: 0;
-}
+
 
 #image1{
 position:absolute;
@@ -59,10 +50,6 @@ position:absolute;
 z-index: 52;
 }
 
-#image3{
-position:absolute;
-z-index: 5;
-}
 
 #logo{
 position:absolute;
@@ -83,20 +70,6 @@ z-index:53;
 opacity: 0;
 }
 
-#endframe{
-position:absolute;
-z-index:80;
-opacity: 0;
-visibility: hidden;
-
-}
-
-#endframecopy{
-position:absolute;
-z-index:55;
-visibility: hidden;
-left:-200px;
-}
 
 #button{
 position:absolute;
@@ -104,10 +77,5 @@ visibility: hidden;
 z-index:82;
 }
 
-#arrow{
-position: absolute;
-visibility: hidden; 
-z-index: 59;
 
-}
 
