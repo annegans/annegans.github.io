@@ -48,6 +48,7 @@ z-index: 5;
 #image2{
 position:absolute;
 z-index: 52;
+ visibility: hidden;
 }
 
 
