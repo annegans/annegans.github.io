@@ -1,0 +1,386 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@font-face {
+    font-family: hello;
+    src: url(../fonts/Ditot.ttf);
+}
+
+.top{
+  vertical-align: top;
+}
+.blue-background{
+	background-color: #152236;
+}
+
+.blue-background-trans{
+  background-color: #152236c4;
+}
+.extra-padding{
+  padding-left:5%;
+  padding-right:5%;
+}
+.display-inline{
+  display: inline-block;
+}
+
+.input-box-news{
+      width: 193px;
+}
+.display-block{
+  display: block;
+}
+
+.no-padding{
+  padding: 0px;
+}
+
+.img-width{
+  width: 100%;
+}
+
+
+/*///////////////////////////////////////navbar////////*/
+
+.navbar-expand-lg-tl{
+	flex-direction: initial;
+    flex-wrap: nowrap;
+        justify-content: flex-start;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center, .navbar-header-center {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+@media (min-width: 768px){
+  .navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+  .navbar-nav>li>a {
+      padding-top: 8px;
+      padding-bottom: 8px;
+  }
+
+
+  .text-align-footer{
+    text-align: right;
+  }
+  .nav-first{
+  padding-left: 0px!important;
+}
+}
+
+.hr-nav{
+    margin: 0px;
+    color: #928351;
+    border: 0.5px solid;
+}
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 100%;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    font-size: 13px;
+    color: white;
+
+}
+
+
+
+
+
+.nav-last{
+  padding-right: 0px!important;
+}
+
+.divider {
+    position: absolute;
+    right: -1px;
+    top: 6px;
+    color:#928351;
+
+}
+
+/*///////////////////////////////////////main-content////////*/
+
+@media (min-width: 768px) {
+  .mobile-display{
+    display: none;
+  }
+
+.background-img{
+  background: url(../img/main-image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.margin-box{
+  margin-top: 14vh;
+
+}
+
+
+}
+
+.padding-main-text{
+  padding-left:  25px;
+}
+
+
+.italicdetail{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 38px;
+}
+
+
+.ineach{
+   font-family: 'Raleway', sans-serif;
+   font-weight: 300;
+   letter-spacing: 2px;
+   font-size: 45px;
+  font-size: 30px;
+
+}
+
+.second{
+  margin-top: 0px;
+}
+.luxury{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 54px;
+    margin-bottom: 0px;
+    color: #bca45a;
+    letter-spacing: 2px;
+
+}
+
+.main-copy{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+}
+
+/*///////////////////////////////////////footer////////*/
+@media (min-width: 768px) {
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -127px;
+}
+.footer,
+.push {
+  height: 127px;
+}
+
+
+
+}
+
+.footer-text{
+  color:white;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  font-size: 12px;
+}
+
+.padding-social-box{
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+
+
+.icon-bar{
+  border: 1px solid #928351;
+}
+.submit{
+  width:27px;
+}
+
+.icon{
+  color: white;
+    padding: 2px;
+    font-size: 26px;
+}
+.icon-envenlope{
+    color: white;
+    font-size: 23px;
+    vertical-align: middle;
+    padding-right: 7px;
+}
+
+#instagram-box {
+    float: left;
+    position: relative; 
+    font-size: 32px;
+    color: white;
+    background-color: #4e5c63;;
+    border-radius: 8px;
+    transition: all 0.2s;
+    height: 35px;
+    width: 32px;
+    margin-top: 5px;
+    padding: 1px 0px 0px 6px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#152236;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color:#152236;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color:#152236;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:#152236;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+input {
+ outline:none;
+}
+
+
+
+
+/*///////mobile view///////*/
+
+
+@media (max-width: 767px){
+ .mobile-space-social{
+  margin-bottom: 10px;
+ }
+
+ .footer-text{
+  padding-bottom: 0px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+ }
+
+ .footer-mobile-padding{
+  margin-bottom: 10px;
+ }
+ .mobile-display-one{
+  display: none;
+ }
+.logo-nav{
+  width: 50%;
+}
+
+
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: 130px;
+}
+.footer,
+.push {
+  height: -130px;
+}
+
+.navbar-collapse {
+ box-shadow:0px;
+ border-top: 1px solid #bca45a;;
+}
+
+.navbar-toggle{
+  margin-top: 15px;
+}
+}
+
+@media (min-width: 927px) and (max-width: 1100px) { 
+
+.nav-link {
+  
+    font-size: 10px;
+    
+}
+}
+
+@media (min-width: 768px) and (max-width: 879px) { 
+
+.nav-link {
+   
+ 
+    font-size: 7px;
+
+}
+}
+
+@media (min-width: 880px) and (max-width: 926px) { 
+
+.nav-link {
+   
+ 
+   font-size: 9px;
+
+}
+}
+
+
+
+
+
+
