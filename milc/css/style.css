@@ -15,6 +15,10 @@ html, body {
 	background-color: #152236;
 }
 
+.blue-background-dark{
+  background-color: #031229;
+}
+
 .blue-background-trans{
   background-color: #152236c4;
 }
@@ -330,11 +334,9 @@ input {
 
 .wrapper {
   min-height: 100%;
-
-  /* Equal to height of footer */
-  /* But also accounting for potential margin-bottom of last child */
   margin-bottom: 12px;
 }
+
 .footer,
 .push {
   height: -12px;

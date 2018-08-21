@@ -1,0 +1,179 @@
+/*.background-img-about{
+  background: url(../img/about-image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}*/
+
+@media (min-width: 767px){
+  .background-img-about{
+  background: url(../img/about-image.jpg) no-repeat center center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+
+}
+ }
+
+.extra-margin-about{
+  margin-top:20px;
+}
+
+ .background-about-2{
+  background: url(../img/about-image2.jpg) no-repeat  ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  
+ }
+.offering{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 53px;
+}
+
+
+.luxury-about{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 43px;
+
+}
+
+.second-about {
+  
+        margin-bottom: 28px;
+    margin-top: 0px;
+}
+
+.main-about{
+  margin-bottom: 40px;
+
+}
+
+.find-out-more-about{
+  text-transform: uppercase;
+  text-decoration: underline;
+  color:#152236;
+   font-family: 'Raleway', sans-serif;
+   margin-left: 3px;
+}
+
+.our{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 54px;
+    margin-bottom: 0px;
+    color: #bca45a;
+    letter-spacing: 2px;
+
+}
+
+
+
+ .padding-copy-about{
+  padding-top: 120px;
+  padding-bottom: 120px;
+ }
+
+ .copy-about{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+ 
+  font-weight: 200;
+  
+  font-size: 27px;
+  color:#152236;
+ }
+  .copy-about2{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 41px;
+  color: #bca45a;
+ }
+
+ .client-text{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 20px;
+  color:#152236;
+  text-transform: uppercase;
+  padding-top: 20px;
+ }
+
+ .gold-border{
+
+  border-top: 1px solid #bca45a;
+
+ }
+
+ .italicdetailEnquiry{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  color:white;
+  font-size: 20px;
+
+ }
+
+ .sans-serifEnquiry{
+   font-family: 'Raleway', sans-serif;
+   font-weight: 300;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color:white;
+   font-size: 20px;
+
+
+ }
+
+.makeEnquiryh2{
+    background-color: #152236;
+    padding-top: 15px;
+    text-align: center;
+    border: 1px solid #bca45a;
+    width: 300px;
+    padding-bottom: 15px;
+    padding-left: 43px;
+    padding-right: 43px;
+}
+ 
+ .enquiry-topper{
+      padding-bottom: 30px;
+    padding-top: 30px;
+ }
+
+
+ @media (max-width: 767px){
+
+.padding-copy-about{
+  padding-top: 50px;
+  padding-bottom: 50px;
+ }
+
+
+ .copy-about{
+
+      font-size: 15px;
+
+ }
+  .copy-about2{
+
+  font-size: 20px;
+ 
+ }
+
+ .client-text{
+
+  font-size: 10px;
+
+ }
+
+}
