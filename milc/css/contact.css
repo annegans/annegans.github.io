@@ -1,0 +1,129 @@
+@media (min-width: 768px) {
+.background-img-contact{
+  background: url(../img/contact-image3.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.line-gold-vertical{
+  width: 2px;
+  height: 100vh;
+  background-color: #bca45a;
+  /*margin-right: 70vw;*/
+  position: absolute;
+
+}
+
+}
+
+.hr-contact{
+  border: 1px solid #bca45a;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.extra-contact{
+  margin-bottom: 40px;
+  margin-left: 0px;
+}
+
+
+.input-contact{
+  width: 100%;
+  border:1px solid lightgray;
+-webkit-box-shadow: inset 7px 7px 32px -11px rgba(184,184,184,0.93);
+-moz-box-shadow: inset 7px 7px 32px -11px rgba(184,184,184,0.93);
+box-shadow: inset 7px 7px 32px -11px rgba(184,184,184,0.93);
+}
+
+.send-contact{
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 43px;
+    margin-bottom: 0px;
+    color: #152236;
+    letter-spacing: 2px;
+}
+
+.a-contact{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 45px;
+    font-size: 42px;
+    color: #bca45a;
+}
+
+.email-contact{
+  text-transform: lowercase;
+}
+
+.note-contact{
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 46px;
+    color: #bca45a;
+}
+
+.get-contact{
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 70px;
+    margin-bottom: 0px;
+    color: #152236;
+    letter-spacing: 2px;
+    margin-left: -5px;
+}
+
+.in-contact{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+
+    font-size: 57px;
+    color: #bca45a;
+    margin-left: -5px;
+}
+
+.touch-contact{
+font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 52px;
+    color: #bca45a;
+}
+
+.contact-details{
+   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 45px;
+    font-size: 12px;
+    /* color: #bca45a; */
+    text-transform: uppercase;
+    line-height: 24px;
+    color: #152236;
+}
+
+.input-text{
+  height: 200px;
+}
+
+.button-contact{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: #bca45a;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+
+.widt-col{
+  width: 1%;
+}

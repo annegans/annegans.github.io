@@ -172,7 +172,7 @@ html, body {
 
 .ineach{
    font-family: 'Raleway', sans-serif;
-   font-weight: 300;
+   font-weight: 200;
    letter-spacing: 2px;
    font-size: 45px;
   font-size: 30px;
@@ -331,6 +331,9 @@ input {
   width: 50%;
 }
 
+.space-shaduw{
+  margin-bottom: 100px;
+}
 
 .wrapper {
   min-height: 100%;
