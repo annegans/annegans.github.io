@@ -1,48 +1,110 @@
+
+
+
+
+
+@use postcss-cssnext;
+
+@media (min-width: 768px) {
+    nav{
+        z-index: 999;
+    }
+}
+
 body{
     background-color: #031229!important;
 }
 
-@media screen and (max-width: 480px){
-    #grid[data-columns]::before {
-        content: '1 .column.size-1of1';
-       
-    }
+/* helpers/align.css */
+
+.align {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    #grid[data-columns]::before {
-        content: '2 .column.size-1of2';
-     
-    }
-}
-@media screen and (min-width: 769px) {
-    #grid[data-columns]::before {
-        content: '4 .column.size-1of4';
-     
-    }
+img{
+  width: 100%;
 }
 
-.box-portfilio{
-    margin-left:-5px;
-    margin-right: -5px;
-    margin-top: -20px;
+/* helpers/grid.css */
+
+.grid {
+/*  margin-left: auto;
+  margin-right: auto;
+  max-width: 100rem;
+  width: 90%;*/
 }
-/* Again, you’re free to use and define the classes: */
-.column { float: left; }
-.size-1of1 { width: 100%; }
-.size-1of2 { width: 50%; }
-.size-1of3 { width: 33.333%; }
-.size-1of4 { width: 25%;}
 
+/* layout/base.css */
 
-.img-width-portfolio{
-    width: 100%;
+html {
+  height: 100%;
+   overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  margin-top: 4v
 
 }
 
-.padding-img-portfolio{
- /*   padding:5px;*/
- padding-left: 5px;
- padding-right:5px;
- padding-bottom: 10px;
+
+/* modules/figure.css */
+
+figure {
+  margin: 0;
+}
+
+/* modules/image.css */
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* vendor/masonry.css */
+
+:root {
+  --masonryGutter: 9px;
+}
+
+.masonry {
+  margin: calc(var(--masonryGutter) * -1);
+}
+
+.masonry__item {
+  margin: calc(var(--masonryGutter) / 2);
+  width: calc(100% / 1 - var(--masonryGutter));
+}
+
+
+@media (min-width: 450px) and (max-width: 849px){
+
+  .masonry__item {
+    width: calc(100% / 2 - var(--masonryGutter));
+  }
+
+}
+
+@media (min-width: 850px) {
+
+  .masonry__item {
+    width: calc(100% / 3 - var(--masonryGutter));
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .masonry__item {
+    width: calc(100% / 4 - var(--masonryGutter));
+  }
+
+}
+/*/////////*/
+
+.extra-margin-portolio-footer{
+  margin-top: 50px;
 }

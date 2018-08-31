@@ -19,11 +19,7 @@
 
 }
 
-.hr-contact{
-  border: 1px solid #bca45a;
-  margin-top:0px;
-  margin-bottom: 0px;
-}
+
 .extra-contact{
   margin-bottom: 40px;
   margin-left: 0px;
@@ -116,7 +112,7 @@ font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman",
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 15px;
     color: #bca45a;
     text-decoration: underline;
     text-transform: uppercase;

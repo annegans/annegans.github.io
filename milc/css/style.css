@@ -45,6 +45,17 @@ html, body {
   width: 100%;
 }
 
+.hr-meet{
+  border: 1px solid #bca45a;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+.hr-contact{
+  border: 1px solid #bca45a;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
 
 /*///////////////////////////////////////navbar////////*/
 
@@ -203,11 +214,11 @@ html, body {
 
   /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
-  margin-bottom: -127px;
+  margin-bottom: -125px;
 }
 .footer,
 .push {
-  height: 127px;
+  height: 125px;
 }
 
 
