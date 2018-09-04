@@ -8,3 +8,4 @@ $('.slide-nav').addClass('animated slideInDown');
 }
 
 window.onload=my_code();
+

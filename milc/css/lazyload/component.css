@@ -1,0 +1,31 @@
+
+
+.mgrid div {
+
+	opacity: 0;
+}
+
+.mgrid div.shown,
+.no-js .mgrid div,
+.no-cssanimations .mgrid div {
+	opacity: 1;
+}
+
+.mgrid.effect-1 div.animate {
+	-webkit-animation: fadeIn 0.65s ease forwards;
+	animation: fadeIn 0.65s ease forwards;
+}
+
+
+
+@-webkit-keyframes fadeIn {
+	0% { }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { }
+	100% { opacity: 1; }
+}
+
+
