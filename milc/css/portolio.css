@@ -26,14 +26,9 @@ img{
   width: 100%;
 }
 
-/* helpers/grid.css */
 
-.grid {
-/*  margin-left: auto;
-  margin-right: auto;
-  max-width: 100rem;
-  width: 90%;*/
-}
+
+
 
 /* layout/base.css */
 
@@ -79,11 +74,24 @@ img {
 }
 
 
+@media (max-width: 767px){
+
+  .grid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100rem;
+  width: 90%;
+  margin-top: 20px;
+}
+
+}
+
 @media (min-width: 450px) and (max-width: 849px){
 
   .masonry__item {
     width: calc(100% / 2 - var(--masonryGutter));
   }
+
 
 }
 
