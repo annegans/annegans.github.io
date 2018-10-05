@@ -74,21 +74,21 @@ z-index:10;
 #text1{
 position:absolute;
 z-index:50;
-left:-290px;
+visibility: hidden;
 }
 
 #text2{
 position:absolute;
 visibility: hidden;
 z-index:50;
-left:-200px;
+visibility: hidden;
 }
 
 #text3{
 position:absolute;
 visibility: hidden;
 z-index:50;
-left:-200px;
+visibility: hidden;
 }
 #endframe{
 position:absolute;
@@ -109,7 +109,7 @@ left:-200px;
 position:absolute;
 visibility: hidden;
 z-index:56;
-left:-200px;
+
 }
 
 #arrow{
