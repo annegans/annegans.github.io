@@ -3,8 +3,8 @@ window.onload = function () {
 var tl1 = new TimelineMax({repeat:1, repeatDelay:1.4})    
 tl1
 
-.to("#text1", 0.5, {autoAlpha: 1})
-.to("#text1", 0.4,{delay:1.5, autoAlpha: 0})
+
+.to("#text1", 0.4,{delay:2, autoAlpha: 0})
 .fromTo("#image2", 0.1, { visibility: "hidden", autoAlpha: 1}, { visibility: "visible", autoAlpha: 1},"second")
 
 .to("#text2", 0.5, {autoAlpha: 1},"second")
