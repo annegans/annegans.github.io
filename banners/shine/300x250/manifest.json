@@ -1,0 +1,27 @@
+{
+    "version": "1.0",
+
+    "title": "3 click template", 
+    "description": "",  
+
+    "width" : "300", 
+    "height": "250", 
+
+    "events": {
+        "enabled": 1, 
+        "list": { }
+    },
+
+    "clicktags": {
+        "clickTAG01": "https://site.adform.com/?1",
+        "clickTAG02": "https://site.adform.com/?2",
+        "clickTAG03": "https://site.adform.com/?3"
+    },
+
+    "source": "index.html"
+}
+
+//  1:CHANGE SIZES
+//  2:CHANGE AMOUNT OF CLICKTAGS
+//  3:SOURCE NEEDS TO HAVE THE SAME NAME AS .INDEX FILE
+
