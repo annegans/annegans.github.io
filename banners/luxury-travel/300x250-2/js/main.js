@@ -18,7 +18,7 @@ tl1
 .to("#button", 0.7, {autoAlpha: 1},"button")
 .to("#buttontext", 0.7, {autoAlpha: 1},"button")
 .to("#arrow", 0.7, {autoAlpha: 1},"button")
-.to("#logo", 0.7, {scale:0.35, bottom:"80px", autoAlpha: 1})
+.to("#logo", 0.7, {scale:0.5, bottom:"60px", autoAlpha: 1})
 .to("#text4", 1, {autoAlpha: 1})
 // .to("#arrow", 0.7, {autoAlpha: 1,  ease:Power1.easeInOut, yoyo:true, x: "0px", repeat:2},"button")
 
