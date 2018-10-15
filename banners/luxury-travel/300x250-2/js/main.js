@@ -1,9 +1,13 @@
 window.onload = function () {
 
-var tl1 = new TimelineMax({repeat:1, repeatDelay:3})    
+var tl1 = new TimelineMax({repeat:0, repeatDelay:1})    
 
 
 tl1
+.fromTo("#logo1", 1, {autoAlpha: 1}, {autoAlpha: 0},"begin")
+.to("#bluesmall", 1, {top:"205px"})
+.to("#borderwhite", 0.1, {css:{zIndex:49}})
+.to("#text1", 1, {autoAlpha: 1, left:"0px"})
 .to("#text1", 1, {autoAlpha: 1, left:"0px"})
 .to("#text1", 1.2, {delay:1.5, autoAlpha: 0, left:"-183px"}, "image1")
 .fromTo("#image2", 1.2, {visibility: "hidden", autoAlpha: 0}, { visibility: "visible", autoAlpha: 1},"image2")
