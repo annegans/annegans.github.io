@@ -42,9 +42,6 @@ tl1
 ///////TOTAL DURATION SHOULD NOT BE OVER 30S////////
 console.log(tl1.totalDuration());  
 
-	///// RESTART BANNER (OPTIONAL)//// 
-	document.getElementById("restart").onclick=function(){
-	tl1.restart();	
-	}
+
 }
 
