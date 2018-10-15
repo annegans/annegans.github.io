@@ -11,7 +11,7 @@ position: absolute;
 position: absolute;
 border: 1px solid #000;
 width:298px;
-height: 248px;
+height: 598px;
 z-index: 998;
 }
 
@@ -20,7 +20,7 @@ z-index: 998;
 position:absolute;
 z-index: 999;
 width:300px;
-height:250px;
+height:600px;
 cursor:pointer;
 }
 
@@ -39,23 +39,21 @@ position:relative;
 overflow:hidden;
 display:block;
 width:300px;
-height:250px;
+height:600px;
 }
 
-#restart{
+
+#boxabove{
 position:absolute;
-right:10px;
-top:15px;
-width:19px;
-height:19px;
-cursor:pointer;
-z-index: 999;
-opacity: 0;
+z-index: 10;
+
 }
 
 #image1{
 position:absolute;
 z-index: 5;
+
+
 
 }
 
@@ -63,12 +61,14 @@ z-index: 5;
 position:absolute;
 z-index: 5;
 visibility: hidden;
+
 }
 
 #image3{
 position:absolute;
 z-index: 5;
 visibility: hidden;
+
 
 }
 
@@ -87,7 +87,7 @@ z-index: 5;
   z-index:10; 
   position:absolute;
   width: 303px;
-    top: 185px;
+top: 534px;
     left:-2px;
 }
 
@@ -96,7 +96,7 @@ z-index: 5;
     position: absolute;
     width: 115px;
     z-index: 10;
-    top: 196px;
+    top: 547px;
     left: 22px;
 }
 
@@ -107,7 +107,7 @@ position:absolute;
 z-index:90; 
     width: 115px;
     z-index: 10;
-    top: 196px;
+ top: 547px;
     left: 22px;
 }
 

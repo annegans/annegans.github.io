@@ -4,8 +4,8 @@
     "title": "3 click template", 
     "description": "",  
 
-    "width" : "300", 
-    "height": "250", 
+    "width" : "320", 
+    "height": "650", 
 
     "events": {
         "enabled": 1, 

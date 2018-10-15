@@ -10,8 +10,8 @@ outline:0;
 position: absolute;
 position: absolute;
 border: 1px solid #000;
-width:298px;
-height: 248px;
+width:726px;
+height: 89px;
 z-index: 998;
 }
 
@@ -19,8 +19,8 @@ z-index: 998;
 .clickArea{
 position:absolute;
 z-index: 999;
-width:300px;
-height:250px;
+width:728px;
+height:90px;
 cursor:pointer;
 }
 
@@ -38,20 +38,11 @@ cursor:pointer;
 position:relative;
 overflow:hidden;
 display:block;
-width:300px;
-height:250px;
+width:728px;
+height:90px;
 }
 
-#restart{
-position:absolute;
-right:10px;
-top:15px;
-width:19px;
-height:19px;
-cursor:pointer;
-z-index: 999;
-opacity: 0;
-}
+
 
 #image1{
 position:absolute;
@@ -78,26 +69,33 @@ z-index: 5;
 
 }
 
-#boxlogo{
+/*#boxlogo{
   position:absolute;
-  top:80px;
-}
+  right:95px;
+}*/
 
-#lowerbox{
+/*#lowerbox{
   z-index:10; 
   position:absolute;
-  width: 303px;
+  width: 3px;
     top: 185px;
     left:-2px;
+}*/
+#boxabove{
+position:absolute;
+z-index: 10;
+
 }
 
 
 #logo{
-    position: absolute;
-    width: 115px;
+position:absolute;
+
+z-index:90; 
+    width: 728px;
     z-index: 10;
-    top: 196px;
-    left: 22px;
+
+    /*left: 22px;*/
 }
 
 
@@ -105,37 +103,38 @@ z-index: 5;
 position:absolute;
 
 z-index:90; 
-    width: 115px;
+    width: 728px;
     z-index: 10;
-    top: 196px;
-    left: 22px;
+
+  /*  left: 22px;*/
 }
 
 #text1{
 position:absolute;
 z-index:50;
 visibility: hidden;
-width: 300px;
+    width: 728px;
+color:white;
 }
 #text2{
 position:absolute;
 visibility: hidden;
 z-index:50;
-width: 300px;
+    width: 728px;
 }
 
 #text3{
 position:absolute;
 visibility: hidden;
 z-index:50;
-width: 300px;
+    width: 728px;
 }
 
 #text4{
 position:absolute;
 visibility: hidden;
 z-index:90;
-width: 300px;
+    width: 728px;
 
 }
 
@@ -151,7 +150,7 @@ visibility: hidden;
 position:absolute;
 visibility: hidden;
 z-index:90;
-width: 300px;
+    width: 728px;
 
 }
 
