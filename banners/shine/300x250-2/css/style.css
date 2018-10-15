@@ -28,14 +28,7 @@ cursor:pointer;
 	/*background-color: red;*/
 }
 
-#clickArea02{
-	/*background-color: orange;*/
-	display: none
-}
 
-#clickArea03{
-	display: none
-}
 
 
 
@@ -85,45 +78,65 @@ z-index: 5;
 
 }
 
+#boxlogo{
+  position:absolute;
+  top:80px;
+}
+
+#lowerbox{
+  z-index:10; 
+  position:absolute;
+  width: 303px;
+    top: 185px;
+    left:-2px;
+}
+
+
 #logo{
-position:absolute;
-
-z-index:10; 
-
+    position: absolute;
+    width: 115px;
+    z-index: 10;
+    top: 196px;
+    left: 22px;
 }
 
 
 #logo2{
 position:absolute;
-overflow: hidden;
+
 z-index:90; 
+    width: 115px;
+    z-index: 10;
+    top: 196px;
+    left: 22px;
 }
 
 #text1{
 position:absolute;
 z-index:50;
 visibility: hidden;
+width: 300px;
 }
-
 #text2{
 position:absolute;
 visibility: hidden;
 z-index:50;
-visibility: hidden;
+width: 300px;
 }
 
 #text3{
 position:absolute;
 visibility: hidden;
 z-index:50;
-visibility: hidden;
+width: 300px;
 }
 
 #text4{
 position:absolute;
 visibility: hidden;
 z-index:90;
-visibility: hidden;
+width: 300px;
+
 }
 
 #endframe{
@@ -134,19 +147,11 @@ visibility: hidden;
 
 }
 
-
-
 #button{
 position:absolute;
 visibility: hidden;
 z-index:90;
-
-}
-
-#arrow{
-position: absolute;
-visibility: hidden; 
-z-index: 59;
+width: 300px;
 
 }
 
