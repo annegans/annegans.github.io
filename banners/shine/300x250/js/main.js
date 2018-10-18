@@ -1,7 +1,7 @@
 
 ///////ADFROM CLICK AREAS////////
 
-var clickTAGvalue01 = dhtml.getVar('clickTAG01', 'https://www.adform.com/?1');
+var clickTAGvalue01 = dhtml.getVar('clickTAG01', 'https://www.shelterbox.org/shine');
 
 
 var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
@@ -42,6 +42,9 @@ tl1
 ///////TOTAL DURATION SHOULD NOT BE OVER 30S////////
 console.log(tl1.totalDuration());  
 
-
+	///// RESTART BANNER (OPTIONAL)//// 
+	document.getElementById("restart").onclick=function(){
+	tl1.restart();	
+	}
 }
 
