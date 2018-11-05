@@ -1,0 +1,25 @@
+{
+    "version": "1.0",
+
+    "title": "3 click template", 
+    "description": "",  
+
+    "width" : "728", 
+    "height": "90", 
+
+    "events": {
+        "enabled": 1, 
+        "list": { }
+    },
+
+    "clicktags": {
+        "clickTAG": "https://www.shelterbox.org/shine"
+    },
+
+    "source": "index.html"
+}
+
+//  1:CHANGE SIZES
+//  2:CHANGE AMOUNT OF CLICKTAGS
+//  3:SOURCE NEEDS TO HAVE THE SAME NAME AS .INDEX FILE
+

@@ -1,0 +1,157 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+}
+
+/*////CHANGE SIZE FOR NEW CREATIVE/////*/
+#border{
+position: absolute;
+position: absolute;
+border: 1px solid #000;
+width:298px;
+height: 248px;
+z-index: 998;
+}
+
+/*////CHANGE SIZE FOR NEW CREATIVE/////*/
+.clickArea{
+position:absolute;
+z-index: 999;
+width:300px;
+height:250px;
+cursor:pointer;
+}
+
+#clickArea01{
+	/*background-color: red;*/
+}
+
+
+
+
+
+
+/*////CHANGE SIZE FOR NEW CREATIVE/////*/
+#container{
+position:relative;
+overflow:hidden;
+display:block;
+width:300px;
+height:250px;
+}
+
+#restart{
+position:absolute;
+right:10px;
+top:15px;
+width:19px;
+height:19px;
+cursor:pointer;
+z-index: 999;
+opacity: 0;
+}
+
+#image1{
+position:absolute;
+z-index: 5;
+
+}
+
+#image2{
+position:absolute;
+z-index: 5;
+visibility: hidden;
+}
+
+#image3{
+position:absolute;
+z-index: 5;
+visibility: hidden;
+
+}
+
+#image4{
+position:absolute;
+z-index: 5;
+
+}
+
+#boxlogo{
+  position:absolute;
+  top:80px;
+}
+
+#lowerbox{
+  z-index:10; 
+  position:absolute;
+/*  width: 303px;
+    top: 185px;
+    left:-2px;*/
+}
+
+
+#logo{
+    position: absolute;
+    width: 115px;
+    z-index: 10;
+    top: 196px;
+    left: 23px;
+}
+
+
+#logo2{
+position:absolute;
+
+z-index:90; 
+    width: 115px;
+    z-index: 10;
+    top: 196px;
+    left: 22px;
+}
+
+#text1{
+position:absolute;
+z-index:50;
+visibility: hidden;
+width: 300px;
+}
+#text2{
+position:absolute;
+visibility: hidden;
+z-index:50;
+width: 300px;
+}
+
+#text3{
+position:absolute;
+visibility: hidden;
+z-index:50;
+width: 300px;
+}
+
+#text4{
+position:absolute;
+visibility: hidden;
+z-index:90;
+width: 300px;
+
+}
+
+#endframe{
+position:absolute;
+z-index:80;
+opacity: 0;
+visibility: hidden;
+
+}
+
+#button{
+position:absolute;
+visibility: hidden;
+z-index:90;
+width: 300px;
+
+}
+
