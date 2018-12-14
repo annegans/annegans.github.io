@@ -121,6 +121,10 @@
     padding-top: 15px;
     font-weight: 300;
 }
+.post1 {
+    width: 20px;
+    /* visibility: hidden; */
+}
 
 hr {
     margin-top: 20px;
@@ -240,7 +244,7 @@ overflow-y:hidden;
 
 .col-height{
 	height: 100vh;
-    margin-right: -7px;
+     margin-right: -9px;
 }
 
 
@@ -256,6 +260,7 @@ width:100%;
 #main-content{
      min-height: 100%;
 
+
    
 }
 #main-content > .row {
@@ -270,6 +275,7 @@ width:100%;
 
 .col-height{
     height: 100vh;
+
 }
 
 
@@ -290,4 +296,95 @@ width:100%;
 }
 
 
+.begin-screen{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1031;
+  position: absolute;
+}
 
+
+.bomb{
+
+
+
+  text-align: center;
+}
+
+.explosion{
+  text-align: center;
+    padding-left: 45vw;
+   width: 120px;
+  padding-top:40vh;
+
+}
+
+.cls-2{
+/*  background-color:red;*/
+  fill:#8b69f1;
+}
+
+.color20{
+  background-color:#8b69f1;
+  width:55px!important;
+}
+
+.align-t{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: 0px;
+    color: black;
+    margin-top: 37vh;
+}
+
+.test-svg .circle:hover{
+  fill:white;
+}
+
+/*.test-svg .cls-2:hover{
+  fill:black;
+}*/
+
+/*.test-svg .cls-2{
+  fill:white;
+}*/
+
+
+.test-svg{
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+  transition: all .2s ease-in-out;
+  position: absolute;
+   width: 120px;
+/*  bottom: 0;
+  right: 0;
+  margin: 0px 0*/
+}
+
+.scale-up{
+  opacity: 1 !important; 
+  transform: scale(0) rotate(180deg) !important;
+}
+
+.post { 
+  width: 300px; 
+
+}
+
+
+/*
+    .fadeIn {
+        -webkit-animation: animat_show 0.8s;
+        animation: animat_show 0.8s;
+        visibility: visible !important;
+    }
+
+    @-webkit-keyframes animat_show{
+        0%{opacity:0}
+        100%{opacity:1}
+    }
+
+    .gone{
+      display: none;
+    }*/
