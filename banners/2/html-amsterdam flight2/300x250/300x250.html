@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	    <style>
+	        html, body, div, span {border: 0;font-size: 100%;font: inherit;vertical-align: baseline;margin: 0;padding: 0; }
+	        body {line-height: 1; }
+	        #stage {position: absolute; z-index: 0; width: 300px; height: 250px; right: auto; bottom: auto; overflow: hidden; text-overflow: clip; background-color: white; background-size: 100% 100%;opacity:0;}
+	        #background{position:absolute;top:0;right:0;background: url('bg.jpg');width:336px;height:280px;}
+	        .txt-1_1, .txt-1_2, .txt-1_3, .people{position:absolute;top:0;left:0}
+	        .people {background: url('people.png'); background-repeat: no-repeat;width:100%;height:100%;background-position: 54% 0%;backface-visibility: hidden;image-rendering: optimizeSpeed;image-rendering: -moz-crisp-edges;image-rendering: -o-crisp-edges;image-rendering: -webkit-optimize-contrast;image-rendering: optimize-contrast;-ms-interpolation-mode: nearest-neighbor;}
+	        .mask-1{position:absolute;bottom:35px;left:12px;width:316px;height:51px;overflow:hidden;}
+/* 	        .mask-1 .txt-2, .mask-2 .txt-3{position:absolute;top:0;left:-4px;} */
+	        .mask-2{position:absolute;bottom:10px;left:12px;width:316px;height:31px;overflow:hidden;}
+	        .txt-4{position: absolute;top:-4px;left:0;}
+/*
+	        #button{position:absolute;top:119px;left:54px;background:url('cta_btn.png') no-repeat;width:216px;height:47px;}
+			#button .arrow{margin-left: 165px;margin-top: 10px;width:15px;-webkit-transition: 0.4s;transition: 0.4s;}
+*/
+			.roc-logo{position: absolute;bottom: 14px;left: 97px;}
+			#stage:hover .arrow{margin-left:170px}
+			
+			/* new css */
+			.txt-1_2{top: 92px;left: 0;right: 0;margin: 0 auto;width: 90%;transform: rotate(-3deg);-webkit-transform: rotate(-3deg);-ms-transform: rotate(-3deg);-moz-transform: rotate(-3deg);}
+			.txt-4{left: 0;right: 0;margin: 0 auto;top: 10px;width: 90%;}
+
+	        .ret{width: 100%;height: 100%;}
+			.roc-logo{position: absolute;bottom: 12px;left: 0;right: 0;margin: 0 auto;width: 109px;height: auto;}
+			.txt-2{position: absolute;width: 228px;height: auto;left: 10px;}
+			.txt-3{position: absolute;width: 281px;height: auto;left: 10px;}
+			.mask{width: 300px;left: 0;right: 0;margin: 0 auto;}
+			.mask-1{bottom: 46px;height: 49px;}
+			.mask-2{bottom: 14px;height: 28px;}
+			#cta-holder{position: absolute;top: 113px;left: 0;right: 0;margin: 0 auto;width: 190px;height: 45px;background-color: white;}
+			.cta{width: 126px;height: auto;position: absolute;top: 16px;left: 16px;}
+			.arrow{width: 10px;height: auto;position: absolute;right: 14px;top: 15px;transition: right 0.4s ease;}
+
+			#stage:hover .arrow{right: 8px;}
+			#contour{width: calc(100% - 2px);height: calc(100% - 2px);position: absolute;left: 0;top: 0;border:1px solid silver;}
+
+	    </style>
+	    <script>
+	    document.write('<script src="'+ (window.API_URL || 'https://s1.adform.net/banners/scripts/rmb/Adform.DHTML.js?bv='+ Math.random()) +'"><\/script>');
+	    </script>
+	</head>
+	<body>
+		<div id="stage" onclick="javascript:window.open(dhtml.getVar('clickTAG'),'_blank');" onmouseover="javascript:this.style.cursor='pointer';" onmouseout="javascript:this.style.cursor='auto';">
+			<!-- HTML CONTENT -->
+			<div id="background"></div>
+			<img src="txt_1_1.png" class="ret txt txt-1_1" />
+			<img src="tryoutday.svg" class="txt txt-1_2" />
+			<img src="txt_1_3.png" class="ret txt txt-1_3" />
+			
+			<div class="people"></div>
+			<div class="mask mask-1">
+				<img src="txt_2.png" class="txt txt-2" />	
+			</div>
+			<div class="mask mask-2">
+				<img src="txt_3.png" class="txt txt-3" />	
+			</div>
+			<img src="tryitout_bottom.svg" class="txt txt-4" />
+			<div id="cta-holder">
+				<img src="cta_btn.png" class="cta" />
+				<img src="cta_btn_arrow.png" class="arrow" />
+			</div>
+			<img src="roc_logo.png" class="roc-logo" />
+			<div id="contour"></div>
+			<!-- END HTML CONTENT -->
+	    </div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	    <script>
+		/*TWEENMAX TIMELINE*/
+	    (function () {
+	      /*ANIMATION BANNER*/
+		      var tl = new TimelineMax();
+		      tl.to('#stage', 0.1, {opacity: 1, ease: Power2.easeOut});
+
+		      tl.from('.txt-1_2', 0.4, {y: "-=100", opacity: 0, force3D:false, scale:1.25, rotation:-5, ease: Power4.easeOut}, '-=0.0');
+		      tl.from('.txt-1_1', 0.4, {y: "-=100",  ease: Power4.easeOut}, '+=0.0');
+		      tl.from('.txt-1_3', 0.4, {y: "+=100", ease: Power4.easeOut}, '-=0.4');
+		      
+		      tl.to('.txt-1_1', 0.3, {opacity: 0, y: "-=100", ease: Power2.easeIn}, '+=1');
+		      tl.to('.txt-1_2', 0.3, {opacity: 0, x: "-=336", ease: Power2.easeIn}, '-=0.3');
+		      tl.to('.txt-1_3', 0.3, {opacity: 0, y: "+=100", ease: Power2.easeIn}, '-=0.4');
+		      
+		      tl.from('.people', 0.3, {x: "+=400", ease: Power1.easeOut},'-=0.2');
+		      tl.to('.people', 3.6, {scale:1.05, force3D:true, rotationZ:0.01, ease:Linear.easeNone},'-=0.0');
+		      
+		      tl.from('.mask-1 .txt-2', 0.4, {y: -53, ease: Power2.easeOut}, '-=3.0');
+		      tl.from('.mask-2 .txt-3', 0.4, {y: -30, ease: Power2.easeOut}, '-=2.5');
+		      
+		      tl.to('.mask-1 .txt-2, .mask-2 .txt-3', 0.4, {y: -53, ease: Power2.easeIn}, '-=1');
+		      tl.to('.people', 0.3, {x: -336, opacity: 0, ease: Power2. easeIn}, '-=0.5' );
+		      
+		      tl.from('.txt-4', 0.4, {opacity: 0.5, x: 336, ease: Power2.easeOut}, '-=0.1');
+		      tl.from('.roc-logo', 0.4, {y: 83, ease: Power2.easeOut}, '-=0.4');
+		      tl.from('#cta-holder', 0.4, {y: "+=10", opacity: 0,force3D:false, scale:0.85, ease: Bounce.easeOut}, '-=0.1');
+
+		      tl.repeat(1).repeatDelay(2);
+	    })();
+		</script>
+	</body>
+</html>
