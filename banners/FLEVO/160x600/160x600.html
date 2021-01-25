@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	    <style>
+	        html, body, div, span {border: 0;font-size: 100%;font: inherit;vertical-align: baseline;margin: 0;padding: 0; }
+	        body {line-height: 1; }
+	        #stage {position: absolute; z-index: 0; width: 160px; height: 600px; right: auto; bottom: auto; overflow: hidden; text-overflow: clip; background-color: white; background-size: 100% 100%;opacity:0;}
+	        #background{position:absolute;top:0;right:0;background: url('bg.jpg');width:160px;height:600px;}
+
+	        /*frame1*/
+	        .people {background: url('people-round.png'); background-repeat: no-repeat;width:100%;height:100%;top:10px;backface-visibility: hidden;image-rendering: optimizeSpeed;image-rendering: -moz-crisp-edges;image-rendering: -o-crisp-edges;image-rendering: -webkit-optimize-contrast;image-rendering: optimize-contrast;-ms-interpolation-mode: nearest-neighbor;}
+			.txt-1_2{width: 96%;height: auto;left: 0;right: 0;margin: 0 auto;top: 147px;transform: rotate(-3deg);-webkit-transform: rotate(-3deg);-ms-transform: rotate(-3deg);-moz-transform: rotate(-3deg);}
+
+			.txt-1_5{position:absolute;top:0;left:0}
+		    .txt-2{width: 108px;height: auto;}
+			.txt-3{width: 142px;height: auto;}
+			.mask{left: 0;right: 0;margin: 0 auto}
+			.mask-1{top: 158px;left: 25px;height: 110px;overflow: hidden}
+			.mask-2{top: 226px;left: 8px;height: 111px;overflow: hidden}
+
+			/* new css */
+	        div, img{position: absolute;top: 0;left: 0}
+	        .ret{width: 100%;height: 100%;}
+			.roc-logo{position: absolute;top:14px;left: 0;right: 0;margin: 0 auto;width: 122px;height: auto;}
+/**/
+
+			#cta-holder{position: absolute;top: 287px;left: 0;right: 0;margin: 0 auto;width: 142px;height: 40px;background-color: white;}
+			.cta{width: 102px;height: auto;position: absolute;top: 14px;left: 13px;}
+			.arrow{width: 10px;height: auto;position: absolute;left: auto;right: 10px;top: 12px;transition: right 0.4s ease}
+			
+			.txt-4{width:96%;height: auto;left: 0;right: 0;margin: 0 auto;top: 110px;}
+			#stage:hover .arrow{right: 6px;}
+			#contour{width: calc(100% - 2px);height: calc(100% - 2px);position: absolute;left: 0;top: 0;border:1px solid silver;}
+			
+	    </style>
+	    <script>
+	    document.write('<script src="'+ (window.API_URL || 'https://s1.adform.net/banners/scripts/rmb/Adform.DHTML.js?bv='+ Math.random()) +'"><\/script>');
+	    </script>
+	</head>
+	<body>
+		<div id="stage" onclick="javascript:window.open(dhtml.getVar('clickTAG'),'_blank');" onmouseover="javascript:this.style.cursor='pointer';" onmouseout="javascript:this.style.cursor='auto';">
+			<!-- HTML CONTENT -->
+			<div id="background"></div>
+			<img src="roc-stad-logo.png" class="ret txt txt-1_1" />
+			<img src="studiekeuze.svg" class="txt txt-1_2" />
+			<!-- <img src="txt_1_3.png" class="ret txt txt-1_3" /> -->
+			
+			<div class="people"></div>
+			<img src="text-1_5.png" class="ret txt txt-1_5" />
+			<div class="mask mask-1">
+				<img src="txt_2.png" class="txt txt-2" />	
+			</div>
+			<div class="mask mask-2">
+				<img src="txt_3.png" class="txt txt-3" />	
+			</div>
+
+			<img src="studiekeuze.svg" class="txt txt-4" />
+			<div id="cta-holder">
+				<img src="cta_btn.png" class="cta" />
+				<img src="cta_btn_arrow.png" class="arrow" />
+			</div>
+			<img src="roc_logo.png" class="roc-logo" />
+			<div id="contour"></div>
+			<!-- END HTML CONTENT -->
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	    <script>
+		/*TWEENMAX TIMELINE*/
+		    (function () {
+		      
+		      /*ANIMATION BANNER*/
+		      var people = new TimelineMax();
+		      people.from('.people', 0.3, {y: "+=400", ease: Power1.easeOut},'-=0.2');
+		      people.to('.people', 3.6, {force3D:true, rotationZ:0.01, scale:1.05, transformOrigin:"0% 100%", ease:Linear.easeNone},'-=0.0');
+		      
+		      var tl = new TimelineMax();
+		      tl.to('#stage', 0.1, {opacity: 1, ease: Power2.easeOut});
+		     
+			  tl.from('.txt-1_2', 0.4, {y: "-=50", opacity: 0, force3D:false, scale:1.25, rotation:-5, ease: Power4.easeOut}, '-=0.0');
+			  tl.from('.txt-1_1', 0.4, {y: "-=100",  ease: Power4.easeOut}, '+=0.0');
+			  tl.from('.txt-1_3', 0.4, {y: "+=50", opacity: 0, ease: Power4.easeOut}, '-=0.4');
+
+			  		      
+		      tl.to('.txt-1_1', 0.3, {opacity: 0, y: "-=100", ease: Power2.easeIn}, '+=1');
+		      tl.to('.txt-1_2', 0.3, {opacity: 0, x: "-=336", ease: Power2.easeIn}, '-=0.3');
+		      tl.to('.txt-1_3', 0.3, {opacity: 0, y: "+=100", ease: Power2.easeIn}, '-=0.4');
+		     
+		     tl.from('.txt-1_5', 0.4, {y: "-=100", ease: Power4.easeOut},'middle');
+		      tl.from('.mask-1 .txt-2', 0.4, {y: -110, ease: Power2.easeOut}, '-=0');
+		      tl.from('.mask-2 .txt-3', 0.4, {y: -113, ease: Power2.easeOut});
+		      
+		      tl.to('.mask-1 .txt-2, .mask-2 .txt-3', 0.4, {y: -113, ease: Power2.easeIn}, '+=1.5');
+		        tl.to('.txt-1_5', 0.4, {opacity: 0, y: "-=100", ease: Power2.easeIn},'-=0.5');
+		      tl.from('.txt-4', 0.4, {opacity: 0.5, x: 336, ease: Power2.easeOut}, '-=0.1');
+		      tl.from('.roc-logo', 0.4, {y: -83, ease: Power2.easeOut}, '-=0.4');
+		      tl.from('#cta-holder', 0.4, {y: "+=10", opacity: 0,force3D:false, scale:0.85, ease: Bounce.easeOut}, '-=0.1');
+		      tl.repeat(2).repeatDelay(2);
+		  	console.log(tl.totalDuration());
+		    })();
+	    </script>
+	</body>
+</html>

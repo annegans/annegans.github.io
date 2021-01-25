@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	    <style>
+	        html, body, div, span {border: 0;font-size: 100%;font: inherit;vertical-align: baseline;margin: 0;padding: 0; }
+	        body {line-height: 1; }
+	        #stage {position: absolute; z-index: 0; width: 728px; height: 90px; right: auto; bottom: auto; overflow: hidden; text-overflow: clip; background-color: white; background-size: 100% 100%;opacity:0;}
+	         #background{position:absolute;top:0;right:0;background: url('bg.jpg');width:728px;height:90px;}
+			
+			div, img{position: absolute;top: 0;left: 0}
+	        .ret{width: 100%;height: 100%;}
+			.roc-logo{position: absolute;top: 13px;left: auto;right: 18px;width: 127px;height: auto;}
+			#cta-holder{position: absolute;top: 20px;left: 318px;width: 192px;height: 48px;background-color: white;}
+			.cta{width: 148px;height: auto;position: absolute;top: 16px;left: 12px;}
+			.arrow{width: 10px;height: auto;position: absolute;left: auto;right: 13px;top: 16px;transition: right 0.4s ease;}
+			#stage:hover .arrow{right: 6px;}
+			.txt-1_2{top: 12px;left: 28px;width: 27%;height: auto;transform: rotate(-2deg);-webkit-transform: rotate(-2deg);-ms-transform: rotate(-2deg);-moz-transform: rotate(-2deg);}
+			.txt-4{top: 10px;width: 27%;left: 37px;}
+			.people{left: 15px;}
+
+			
+			#contour{width: calc(100% - 2px);height: calc(100% - 2px);position: absolute;left: 0;top: 0;border:1px solid silver;}
+	    </style>
+	    <script>
+	    document.write('<script src="'+ (window.API_URL || 'https://s1.adform.net/banners/scripts/rmb/Adform.DHTML.js?bv='+ Math.random()) +'"><\/script>');
+	    </script>
+	</head>
+	<body>
+		<div id="stage" onclick="javascript:window.open(dhtml.getVar('clickTAG'),'_blank');" onmouseover="javascript:this.style.cursor='pointer';" onmouseout="javascript:this.style.cursor='auto';">
+			<!-- HTML CONTENT -->
+			<div id="background"></div>
+			<img src="roc-stad-logo.png" class="ret txt txt-1_1" alt="" />
+			<img src="studiekeuze.svg" class="txt txt-1_2" />
+			<!-- <img src="txt_1_3.png" class="ret txt txt-1_3" alt="" /> -->
+			
+			<img src="people-round.png" class="people" alt="" />
+			<img src="txt_5.png" class="ret txt txt-1_5" />
+			<img src="txt_2.png" class="ret txt txt-2" alt="" />	
+			<img src="txt_3.png" class="ret txt txt-3" alt="" />	
+			<img src="studiekeuze.svg" class="txt txt-4" />
+			<div id="cta-holder">
+				<img src="cta_btn.png" class="cta" />
+				<img src="cta_btn_arrow.png" class="arrow" />
+			</div>
+			<img src="roc_logo.png" class="roc-logo" alt="" />
+			<div id="contour"></div>
+			<!-- END HTML CONTENT -->
+		</div>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	    <script>
+		/*TWEENMAX TIMELINE*/
+		    (function () {
+		      
+		      /*ANIMATION BANNER*/
+		      var people = new TimelineMax();
+		      people.from('.people', 0.3, {y: "+=100", ease: Power1.easeOut},'-=0.2');
+		      people.to('.people', 3.6, {force3D:true, rotationZ:0.01, scale:1.05, transformOrigin:"100%", ease:Linear.easeNone},'-=0.0');
+		      
+		      var tl = new TimelineMax();
+		      tl.to('#stage', 0.1, {opacity: 1, ease: Power2.easeOut});
+
+			  tl.from('.txt-1_2', 0.4, {y: "-=100", opacity: 0, force3D:false, scale:1.25, rotation:-5, ease: Power4.easeOut}, '-=0.0');
+		      tl.from('.txt-1_1', 0.4, {y: "-=100",  ease: Power4.easeOut}, '+=0.0');
+		      tl.from('.txt-1_3', 0.4, {y: "+=100", ease: Power4.easeOut}, '-=0.4');
+		      
+		      tl.to('.txt-1_1', 0.3, {opacity: 0, y: "-=100", ease: Power2.easeIn}, '+=1');
+		     
+		      tl.to('.txt-1_3', 0.3, {opacity: 0, y: "+=100", ease: Power2.easeIn}, '-=0.4');
+
+		      tl.from('.txt-1_5', 0.4, {y: -90, ease: Power2.easeOut});
+		     
+		      tl.to('.txt-1_5', 0.4, {y: -90, ease: Power2.easeOut}, '+=0.8');
+		      tl.to('.txt-1_2', 0.3, {opacity: 0, x: "-=336", ease: Power2.easeIn}, '-=0.3');
+
+		      tl.from('.txt-2', 0.4, {y: -90, ease: Power2.easeOut});
+		      tl.to('.txt-2', 0.4, {y: -90, ease: Power2.easeOut}, '+=0.8');
+
+		      tl.from('.txt-3', 0.4, {y: -90, ease: Power2.easeOut});
+		      tl.to('.txt-3', 0.4, {y: -90, ease: Power2.easeOut}, '+=1');
+		      
+		      tl.from('.txt-4', 0.4, {opacity: 0.5, y: 90, ease: Power2.easeOut}, '-=0.1');
+		      tl.to('.people', 0.3, {y: 100, opacity: 0, ease: Power2. easeIn}, '-=0.5' );
+		      tl.from('.roc-logo', 0.4, {y: 83, ease: Power2.easeOut}, '-=0.4');
+		      tl.from('#cta-holder', 0.4, {y: "+=10", opacity: 0,force3D:false, scale:0.85, ease: Bounce.easeOut}, '-=0.1');
+		      tl.repeat(1).repeatDelay(2);
+
+		  
+		    })();
+	    </script>
+	</body>
+</html>
