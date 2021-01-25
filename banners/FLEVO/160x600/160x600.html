@@ -78,9 +78,9 @@
 		      var tl = new TimelineMax();
 		      tl.to('#stage', 0.1, {opacity: 1, ease: Power2.easeOut});
 		     
-			  tl.from('.txt-1_2', 0.4, {y: "-=50", opacity: 0, force3D:false, scale:1.25, rotation:-5, ease: Power4.easeOut}, '-=0.0');
-			  tl.from('.txt-1_1', 0.4, {y: "-=100",  ease: Power4.easeOut}, '+=0.0');
-			  tl.from('.txt-1_3', 0.4, {y: "+=50", opacity: 0, ease: Power4.easeOut}, '-=0.4');
+			  tl.from('.txt-1_2', 0.4, {y: "-=50", opacity: 0, force3D:false, scale:1.25, rotation:-5, ease: Power4.easeOut}, 'intro');
+			  tl.from('.txt-1_1', 0.4, {y: "-=100",  ease: Power4.easeOut}, 'intro');
+			  tl.from('.txt-1_3', 0.4, {y: "+=50", opacity: 0, ease: Power4.easeOut}, 'intro');
 
 			  		      
 		      tl.to('.txt-1_1', 0.3, {opacity: 0, y: "-=100", ease: Power2.easeIn}, '+=1');
