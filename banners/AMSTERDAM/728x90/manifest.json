@@ -1,0 +1,24 @@
+{
+    "version": "1.0", 
+
+    "title": "728x90", 
+    "description": "ROCvA banner",  
+
+    "width" : "728", 
+    "height": "90", 
+
+    "events": {
+        "enabled": 0, 
+        "list": { 
+            "1": "myEventName1",
+            "2": "myEventName2",
+            "3": "myEventName3"
+        }
+    },
+
+    "clicktags": {
+        "clickTAG": "https://www.rocvf.nl/studiekeuze",
+    },
+
+    "source": "728x90.html"
+}
