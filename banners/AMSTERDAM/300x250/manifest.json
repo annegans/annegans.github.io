@@ -16,8 +16,8 @@
         }
     },
 
-    "clicktag": {
-        "clickTAG": "https://www.rocva.nl",
+    "clicktags": {
+        "clickTAG": "https://rocva.nl/studiekeuze",
     },
 
     "source": "300x250.html"
