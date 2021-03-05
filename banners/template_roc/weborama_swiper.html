@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- WEBORAMA SCREENAD META DATA (don't edit/remove) -->
+    <!-- SCRVERSION: screenad_interface_1.0.3 -->
+    <!-- SCRFORMAT: banner -->
+    <!-- SCRWIDTH: 300 -->
+    <!-- SCRHEIGHT: 250 -->
+    <!-- TEMPLATENAME: Weborama Swiper 300x250 -->
+    <!-- TEMPLATEDATE: 2018-02-19 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Weborama Template">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://media.adrcdn.com/ad-resources/swiper/weborama.swiper.1.0.12.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+    <script type="text/javascript" src="https://media.adrcdn.com/ad-resources/swiper/weborama.swiper.1.0.12.min.js"></script>
+</head>
+
+<body>
+    <div class="webo-swipe-container"><div class="webo-swiper-icon"><div></div><div></div></div></div>
+
+    <div class="swiper-container">
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- You can adjust the color of the paginationType in styles.css-->
+
+        <!-- Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <!-- You can adjust the color to black by changing "white" into "black"
+             Add the class swipe-up and swipe-down to the arrows if you make use of a vertical direction -->
+
+        <div class="swiper-wrapper">
+            <div data-report="slide001" class="swiper-slide" style="background-image:url(side_01.jpg)" onclick="screenad.click();"></div>
+            <div data-report="slide002" class="swiper-slide" style="background-image:url(side_02.jpg)" onclick="screenad.click();"></div>
+            <div data-report="slide003" class="swiper-slide" style="background-image:url(side_03.jpg)" onclick="screenad.click();"></div>
+            <div data-report="slide004" class="swiper-slide" style="background-image:url(side_04.jpg)" onclick="screenad.click();"></div>
+            <!-- You can easily add more slides to the swiper container, just copy-paste the above div and adjust the background image -->
+        </div>
+    </div>
+
+    <script>
+        var shadowsVisible = true; // Shadows do not work on Android versions 4.3 and below
+
+        var swiper = new Swiper('.swiper-container', {
+
+            effect: 'cube', // effects: 'cube', 'slide', 'fade', 'flip' and 'coverflow'
+            direction: 'horizontal', // else 'vertical' direction
+            pagination: '.swiper-pagination', // If you don't want navigation arrows comment out the div '.swiper-pagination'
+            paginationType: 'bullets', // type of pagination: 'bullets' or 'progress'
+            nextButton: '.swiper-button-next', // If you don't want navigation arrows remove the div '.swiper-button-next'
+            prevButton: '.swiper-button-prev', // If you don't want navigation arrows remove the div '.swiper-button-prev'
+            speed: 700, // speed of rotation
+            autoplay: 1500, // delay between transitions in milliseconds; false is no autoplay
+            loop: true, // loop slides; false is no loop
+            // weboSwipeIcon: true, // true, false or remove (remove will show in touch device, not in desktop)
+            /** if you make use of the 'cube' effect you can adjust the settings below */
+            cube: {
+                    shadow: shadowsVisible,
+                    slideShadows: shadowsVisible,
+                    shadowOffset: 10,
+                    shadowScale: 0.84
+            },
+
+            /** if you make use of the 'fade' effect you can adjust the settings below */
+            fade: {
+              crossFade: false
+            },
+
+            /** if you make use of the 'coverflow' effect you can adjust the settings below */
+            coverflow: {
+              rotate: 50,
+              stretch: 0,
+              depth: 300,
+              modifier: 1,
+              slideShadows : shadowsVisible
+            }
+        });
+
+
+        /*=========================
+          Callbacks
+        ===========================*/
+
+        /** Will be executed at the end of the animation to other slide. Also if autoplay is true.
+         *  You can check for swiper.userEngaged() this will return true or false */
+        swiper.on('onSlideChangeEnd', function () {
+            // do stuff
+
+            /** EXAMPLE USAGE
+            console.log('-- current slide: ', swiper.slides[swiper.activeIndex],
+                        '-- data-report: ', swiper.slides[swiper.activeIndex].getAttribute('data-report'),
+                        '-- user engaged?: ', swiper.userEngaged());
+            */
+
+        });
+
+        /** Will be executed when user touch (swipe, click, tap) */
+        swiper.on('onTouchStart', function () {
+            // do stuff
+        });
+
+        /** Will be executed in the beginning of transition */
+        swiper.on('onTransitionStart', function () {
+            // do stuff
+        });
+
+        /** Will be executed after transition */
+        swiper.on('onTransitionEnd', function () {
+            // do stuff
+        });
+
+        /** Will be executed when when autoplay started */
+        swiper.on('onAutoplayStart', function () {
+            // do stuff
+        });
+
+        /** will be executed when when autoplay stopped */
+        swiper.on('onAutoplayStop', function () {
+            // do stuff
+        });
+
+    </script>
+</body>
+
+</html>

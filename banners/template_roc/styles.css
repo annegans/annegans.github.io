@@ -1,0 +1,44 @@
+body {
+    width: 300px;
+    height: 250px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/*  The adslot has a height of 250px, the slider has a heigth of 240px because the cube
+    slides + shadow of each slide is better visible. You can adjust this to any size you
+    want (max 250px). Keep in mind that this is also the size of your images. For double
+    resolutions you can use the doubled size of the swiper-container width and height. */
+
+.swiper-container {
+    width: 300px;
+    height: 240px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: block;
+    margin: auto;
+}
+/* image in slide */
+.swiper-slide {
+    background-size: cover;
+}
+/* Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 50px;
+   -moz-background-size: 27px 30px;
+   -webkit-background-size: 27px 30px;
+   background-size: 27px 30px;
+}
+
+/* paginationType progressbar */
+.swiper-pagination-progress .swiper-pagination-progressbar {
+    background: #007aff;
+}
+
+/* paginationType bullet */
+.swiper-pagination-bullet-active {
+    background: white;
+}
