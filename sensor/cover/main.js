@@ -6,6 +6,10 @@ sr.reveal('.headline', {
 		duration: 2000,
 		origin:'bottom'
 	});
+sr.reveal('.element', {
+		duration: 2000,
+		origin:'bottom'
+	});
 sr.reveal('.points', {
 		duration: 2000,
 		delay:300,
@@ -22,29 +26,29 @@ sr.reveal('.point', {
 	});
 
 sr.reveal('.body-copy', {
-		duration: 1000
-	
+		duration: 2000
+		
 		
 	});
 
 sr.reveal('.copy1', {
 		duration: 300,
-		delay:2300,
-		viewfactor:0.2
+		origin:'bottom'
+	
 		
 	});
 
 sr.reveal('.copy2', {
 		duration: 300,
-		delay:2600,
-		viewfactor:0.2
+	origin:'bottom'
+	
 		
 	});
 
 sr.reveal('.copy3', {
 		duration: 300,
-		delay:1200,
-		viewfactor:0.2
+		origin:'bottom'
+	
 		
 	});
 
@@ -60,6 +64,54 @@ sr.reveal('.test', {
 		reset: true
 		
 	});
+
+
+
+const upperEyeLid = document.querySelector("#upper-eye-lid");
+const upperEyeLidCover = document.querySelector("#upper-eye-lid-cover");
+const lowerEyeLid = document.querySelector("#lower-eye-lid");
+const lowerEyeLidCover = document.querySelector("#lower-eye-lid-cover");
+const blinkToBlink = [2500, 2000, 4000, 300];
+const deltas = (r) => [
+  [0, 0, blinkToBlink[r]],
+  [5, -1, 10],
+  [90, -10, 130],
+  [30, -3, 55],
+  [20, -2, 25],
+  [10, -1, 25]
+];
+let i = 0;
+const blinkEye = (deltas) => {
+  const _deltas = deltas(Math.round(Math.random() * 3));
+  if (i == _deltas.length) {
+    i = 0;
+  }
+  upperEyeLid.setAttribute(
+    "d",
+    `m 0,50 q 50 ${-60 + _deltas[i][0]}, 100 0 q -50 ${
+      -40 + _deltas[i][0]
+    }, -100 0`
+  );
+  upperEyeLidCover.setAttribute(
+    "d",
+    `m 0,50 q 50 -80, 100 0 q -50 ${-40 + _deltas[i][0]}, -100 0`
+  );
+
+  lowerEyeLid.setAttribute(
+    "d",
+    `m 1,50 q ${27 - _deltas[i][1]} ${33 + _deltas[i][1]}, ${
+      77 + _deltas[i][1]
+    } 21 q ${-63 - _deltas[i][1]} ${14 + _deltas[i][1]}, ${
+      -77 - _deltas[i][1]
+    } -21`
+  );
+  // lowerEyeLid.setAttribute('d', `m 1,50 q 27 33, 78 ${21 + _deltas[i][1]} q -63 14, -78 ${-21 - _deltas[i][1]}`)
+  // lowerEyeLidCover.setAttribute('d', `m 1,50 q 17 45, 78 21 q ${-63 + _deltas[i][1]} ${14 + _deltas[i][1]}, -78 -21`)
+  setTimeout(blinkEye, _deltas[i][2], deltas);
+  console.log(i);
+  i++;
+};
+blinkEye(deltas);
 
 // ScrollReveal().reveal('.headline');
 

@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.83.1">
-    <title>Cover Template · Bootstrap v5.0</title>
+    <title>Sensor Dispenser</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
@@ -41,13 +41,13 @@
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
 
   </head>
-  <body class="d-flex text-white§">
+  <body class="d-flex text-white">
   
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex w-100 h-100 p-4 mx-auto flex-column">
 
       <header class="mb-auto ">
         <div class="">
-          <h3 class="float-md-start mb-0"><img width="100" src="../img/img-logo.png"></h3>
+          <h3 class="float-md-start mb-0 text-center padding-logo"><img width="100" src="../img/img-logo.png"></h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link active" aria-current="page" href="#home">Home</a>
             <a class="nav-link" href="#features">Features</a>
@@ -61,23 +61,23 @@
       <main id="home" class="ma-1">
 
         <section id="intro">
-          <div class="position-relative text-center ">
+          <div class="position-relative text-center element">
             <div class="col-md-5 p-lg-5 mx-auto">
-              <h1 class="display-5 fw-normal headline">Sensor Dispenser</h1>
-              <p class="gradient lead fw-normal headline">Re-Invented - Supercharged with new gearbox</p>
+              <h1 class="display-5 fw-normal ">Sensor Dispenser</h1>
+              <p class="gradient lead fw-normal">Re-Invented - Supercharged with new gearbox</p>
            <!--    <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
             </div>
             <!-- <div class="product-device shadow-sm d-none d-md-block"><img width="200px" src="../img/Sensor-Dispensers_001e-black.23.png"></div>
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"><img width="200px" src="../img/Sensor-Dispensers_001e-black.23.png"></div> -->
           </div>
 
-          <div class="row">
-            <div class="coll text-center headline">
-              <img class="lax lax_preset_slideY:1000:-40" width="80%" src="../img/1000-1.png">
-          <div id="wrapper">
-                <img id="copy" width="60%" class="img-responsive lax lax_preset_slideY:600:-180" src="../img/500-2.png" />
+          <div class="row extra-margin-mobile element">
+            <div class="coll text-center">
+              <img class="header-img" src="../img/dispenser.png">
+    <!--       <div id="wrapper"> -->
+                <!-- <img id="copy" width="60%" class="img-responsive lax lax_preset_slideY:600:-180" src="../img/500-2.png" /> -->
                 <!-- <img id="logo" class="img-responsive" src="https://unsplash.it/500/500?image=39" /> -->
-          </div>
+         <!--  </div> -->
             </div>
           </div>
 
@@ -93,10 +93,10 @@
         </section>
 
         <section id="features" >
-          <div class="row my-6">
+          <div class="row my-6 element">
             <div class="col-md-7 mx-auto">
-              <h1 class="display-5 fw-normal text-center headline">Mind-blowing performance</h1>
-              <p class="lead fw-normal text-center headline "> Now with breakthrough MFS technology</p>
+              <h1 class="display-5 fw-normal text-center">Mind-blowing performance</h1>
+              <p class="lead fw-normal text-center"> Now with breakthrough MFS technology</p>
               <p class="body-copy text-center">The ultimate dispenser experience. Now with breakthrough gearbox performance, a breathtaking design, and blazing‑fast ... sensor speed. Buckle up.</p>
               <p></p>
               <div class="coll text-center">
@@ -111,7 +111,7 @@
           </div>
         </section>
         <section class="my-6"> 
-          <div class="row">
+          <div class="row element">
             <div class="col">
               <img width="100%" src="../img/4.png">
             </div>
@@ -125,15 +125,70 @@
                
                   <h3 class="gradient text-highlight copy1">FMT</h3>
                   <p class="text-higlight-sub copy copy1">fast multishot technology</p>
+
                   <h3 class="gradient text-highlight copy2">3D </h3>
                   <p class="text-higlight-sub copy2">sensor experience</p>
-                  <h3 class="gradient text-highlight copy2">Night Eye</h3>
-                  <p class="text-higlight-sub copy2">low battery consumption</p>
-                  <h3 class="gradient text-highlight copy2"></h3>
-                  <p class="text-higlight-sub copy2">light ambienence</p>
+
+                  <h3 class="gradient text-highlight copy3">Night Eye</h3>
+                  <p class="text-higlight-sub copy3">low battery consumption</p>
+                <!--   <h3 class="gradient text-highlight copy3"></h3>
+                  <p class="text-higlight-sub copy3">light ambienence</p> -->
        
        
 
+              </div>
+            </div>
+        </section>
+
+        <section class="my-6 element">  
+          <div class="row">
+            <div class="col text-center">
+                <div id="eye">
+                  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+             
+                    <defs>
+                      <radialGradient id="iris">
+                        <stop offset="0%" stop-color="#fff600"></stop>
+                        <stop offset="90%" stop-color="#fc7403"></stop>
+                        <!-- <stop offset="92%" stop-color="#fa0505"></stop> -->
+                      </radialGradient>
+                      <radialGradient id="lid">
+                        <stop offset="0%" stop-color="red"></stop>
+                        <stop offset="90%" stop-color="#fc7403"></stop>
+                        <!-- <stop offset="92%" stop-color="#fa0505"></stop> -->
+                      </radialGradient>
+                      <radialGradient id="iris-ring">
+                        <stop offset="0%" stop-color="pink"></stop>
+                        <stop offset="80%" stop-color="yellow"></stop>
+                        <stop offset="100%" stop-color="orange"></stop>
+                      </radialGradient>
+                    </defs>
+
+                    <g>
+                      <ellipse cx="50" cy="43" fill="url(#iris)" id="iris" rx="20" ry="30"></ellipse>
+                      <path d="m 32,55 q -7 -35, 17 -42 q 26 5, 19, 42 q -17 -20, -35 0" fill="url(#iris)" id="iris-shadow"></path>
+                      <ellipse cx="50" cy="45" fill="url(#iris-ring)" id="iris-ring" rx="12" ry="17"></ellipse>
+                      <ellipse cx="50" cy="46" fill="black" id="pupil" rx="5" ry="10"></ellipse>
+                      <path d="m 0,50 q 50 -80, 100 0 q -50 -40, -100 0" id="upper-eye-lid-cover"></path>
+                      <path d="m 0,50 q 50 -60, 100 0 q -50 -40, -100 0" fill="url(#lid)" id="upper-eye-lid"></path>
+                      <path d="m 1,50 q 27 33, 78 21 q -63 14, -78 -21" fill="url(#lid)" id="lower-eye-lid"></path>
+                    </g>
+
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="col points text-center">
+                <div>
+                  <h1 class="display-5 fw-normal headline">Night Eye</h1>
+                </div>
+                <p>Automatic magic.</p>
+                <p>costumble sensor speed.</p>
+                <p>hier ene voordeel</p>
+                <p>hier ene voordeel</p>
+            
               </div>
             </div>
         </section>
@@ -185,7 +240,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 text-center ">
+          <div class="col-md-6 text-center ">
             <img width="100%" src="../img/gearbox-black.png">
           </div>
         </div>
@@ -201,56 +256,44 @@
             <img width="100%" src="../img/chip.png">
           </div>
         </div>
-      </section>
 
-      <section class="">  
-        <div class="row  align-items-center">
-          <div class="col text-center">
-            <img width="100%" src="../img/gearbox.png">
-          </div>
-   
-          <div class="col points">
-            <div>
-              <h1 class="display-5 fw-normal headline">Mind-blowing performance</h1>
-              <p class="red lead fw-normal headline "> Now with breakthrough MFS technology</p>
-            </div>
-            <p>hier ene voordeel</p>
-            <p>hier ene voordeel</p>
-            <p>hier ene voordeel</p>
-            <p>hier ene voordeel</p>
-        
-            <div class="row my-4">
-              <div class="col-md-4 copy1">
+        <div class="row my-2 justify-content-center">
+              <div class="col-md-2 copy1">
                 <h3 class="gradient text-highlight">50%</h3>
                 <p class="text-higlight-sub copy">Faster performance</p>
               </div>
-              <div class="col-md-4 copy2">
+              <div class="col-md-2 copy2">
                 <h3 class="gradient text-highlight">30%</h3>
                 <p class="text-higlight-sub">Better .....</p>
               </div>
-            </div>
-          </div>
+              <div class="col-md-2 copy2">
+                <h3 class="gradient text-highlight">30%</h3>
+                <p class="text-higlight-sub">Better .....</p>
+              </div>
         </div>
       </section>
 
 
+
+<!-- 
+////////////test met parralax/////////////// -->
        <!--  <div class="row my-6"> -->
-          <div class="col-md-6 p-lg-6 mx-auto  ">
+       <!--    <div class="col-md-6 p-lg-6 mx-auto  "> -->
   
            <!--  <div class="selector">Hello</div>
             <div class="lax_preset_fadeInOut:250.75:0 lax_preset_seesaw:140:20">hello</div>
               <div class="lax lax_preset_slideY: 0:645 lax_preset_scaleOut:67:0.5">Hello</div>
               <div class="lax lax_preset_fadeIn:50:100 lax_preset_spin"> hello2</div> -->
         <!--     <div class="lax lax_preset_fadeInOut:250.75:0 lax_preset_seesaw:140:20">jkhlkjkljl</div> -->
-          </div>
+         <!--  </div> -->
           
 
       <!--   </div> -->
      <!--    <div class="lax lax_preset_fadeInOut:250.75:0 lax_preset_seesaw:140:20">jkhlkjkljl</div> -->
       </main>
-      <!-- <div class="lax lax_preset_fadeInOut:250.75:0 lax_preset_seesaw:140:20">jkhlkjkljl</div> -->
+  
       <footer class="mt-auto text-white-50 text-center">
-        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+        <p>Fooom Advanced Dispensing <a href="www.fooom.eu" class="text-white">www.fooom.eu</a></p>
       </footer>
     </div>
 
